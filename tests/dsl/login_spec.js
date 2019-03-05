@@ -22,5 +22,5 @@ step("Login as <username> using <password>", async (username, password) => {
 })
 
 step("Page contains <content>", async (content) => {
-    assert.equal('Exists', (await text(contains(content)).exists()).description);
+    assert.equal('Exists', (await text(contains(content)).exists(intervalSecs(1), timeoutSecs(120))).description);
 });
