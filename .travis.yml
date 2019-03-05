@@ -1,0 +1,21 @@
+dist: trusty
+addons: # get google-chrome-stable
+  chrome: stable
+
+before_script:
+  - sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-keys 023EDB0B
+  - echo deb https://dl.bintray.com/gauge/gauge-deb nightly main | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update
+  - sudo apt-get install gauge
+
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+  
+script:
+  - gauge telemetry off
+  - gauge install js
+  - npm install
+  - gauge -v
+  - gauge run -p specs/
