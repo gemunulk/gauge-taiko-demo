@@ -9,9 +9,7 @@ before_script:
   - sudo apt-get install gauge
 
 language: node_js
-node_js:
-  - "iojs"
-  - "7"
+node_js: node
   
 script:
   - gauge telemetry off
