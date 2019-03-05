@@ -1,4 +1,4 @@
-# gauge-taiko-demo
+# gauge-taiko-demo [![Build Status](https://travis-ci.org/gemunulk/gauge-taiko-demo.svg?branch=master)](https://travis-ci.org/gemunulk/gauge-taiko-demo)
 This is an example project, illustrating how to automate the Chrome Browser using Taiko and Gauge test automation framework in JavaScript. Originally cloned from [Gauge Examples](https://github.com/getgauge-examples/js-taiko) and then modifed for the AUT [Demoaut](http://newtours.demoaut.com/)
 
 # What’s Gauge?
