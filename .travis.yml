@@ -13,7 +13,7 @@ node_js: node
   
 script:
   - gauge telemetry off
+  - npm install -g taiko  
   - gauge install js
-  - npm install
   - gauge -v
-  - gauge run -p specs/
+  - gauge run specs/
